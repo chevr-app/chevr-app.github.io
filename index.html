@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<title>ЧеVR</title>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<!-- <link href="css/mdb.min.css" rel="stylesheet"> -->
+<!-- Your custom styles (optional) -->
+<!-- JQuery -->
+<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<!-- <script type="text/javascript" src="js/mdb.js"></script> -->
+<!-- Charts JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+<!-- captcha -->
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+
+<link href="css/style.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="ЧеVR" />
+<meta property="vk:image"  content="http://chevr.tk/img/favicon-black.png" />
+</head>
+<body data-spy="scroll" data-target="#menu" data-offset="0">
+<script> $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top+1}, 1000);
+    });
+});
+</script>
+<script type="text/javascript">
+      var verifyCallback = function(response) {
+      };
+      var onloadCallback = function() {
+        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+        grecaptcha.render('captcha', {
+          'sitekey' : '6Lecs5wUAAAAAM_go1471YENfueI9leggkD9gL7z',
+          'callback' : verifyCallback,
+          'theme' : 'light'
+        });
+      };
+    </script>
+
+<nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img class="ml-5" style="height: 4rem; margin-bottom: -0.45rem; margin-top: -0.45rem;" src="img/favicon.png" alt="ЧеVR" draggable="false"></img>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="font-size:1.2em">
+      <li class="nav-item">
+        <a class="nav-link" href="#func">Функции</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#desc">Описание</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#download">Скачать</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#donate">Поддержатб</a>
+      </li>
+      <!--li class="nav-item">
+        <a class="nav-link" href="#help">Обр. связь</a>
+      </li-->
+</nav>
+<section id="func" class="container-fluid pt-15 pb-10 pr-7 pl-7">
+    <h1 class="text-center mb-3">Что есть в ЧеVR?</h1>
+    <div class="align-items-center justify-content-center d-flex row">
+        <div class="legend col-md-3">
+            <button class="btn mb-2 pt-2 pl-2 pr-2 text-white legend-el" style="background-color: rgb(255,99,132);" type="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Готово!" data-trigger="hover"><h6>Погода<i class="fa fa-check ml-3 mr-1"></i></h6></button><br>
+            <button class="btn mb-2 pt-2 pl-2 pr-2 text-white legend-el" style="background-color: rgb(99,148,255);" type="button" data-container="body" data-toggle="popover" data-placement="right" data-content="В разработке..." data-trigger="hover"><h6>Маршруты автобусов<i class="fa fa-times ml-2 mr-1"></i></h6></button><br>
+            <button class="btn mb-2 pt-2 pl-2 pr-2 text-white legend-el" style="background-color: rgb(99,255,135);" type="button" data-container="body" data-toggle="popover" data-placement="right" data-content="В разработке..." data-trigger="hover"><h6>3D-достопримечательности<i class="fa fa-times ml-2 mr-1"></i></h6></button><br>
+            <button class="btn mb-2 pt-2 pl-2 pr-2 legend-el" style="background-color: rgb(255,221,99);" type="button" data-container="body" data-toggle="popover" data-placement="right" data-content="В разработке..." data-trigger="hover"><h6>Афиши<i class="fa fa-times ml-2 mr-1"></i></h6></button><br>
+            <button class="btn mb-2 pt-2 pl-2 pr-2 text-white legend-el" style="background-color: rgb(120,99,255);" type="button" data-container="body" data-toggle="popover" data-placement="right" data-content="Готово!" data-trigger="hover"><h6>Новости<i class="fa fa-check ml-3 mr-1"></i></h6></button>
+        </div>
+        <script>
+            $(function () {
+$('[data-toggle="popover"]').popover()
+})</script>
+
+       <div class="col-md-3"><canvas id="myChart" style="max-height: 17rem;max-width: 17rem; margin-left: 20px;" width="17rem" height="17rem"></canvas>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+
+    // The data for our dataset
+    data: {
+        labels: ["Погода", "Маршруты автобусов", "3D-достопримечательности", "Афиши", "Новости"],
+        datasets: [{
+            label: "",
+            backgroundColor: [
+        'rgb(255,99,132)',
+        'rgb(99,148,255)',
+        'rgb(99,255,135)',
+        'rgb(255,221,99)',
+        'rgb(120,99,255)'
+      ],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [1, 1, 1, 1, 1]
+        }]
+       // backgroundColor: [#FF6384,#6394ff,#63ff87,#ffdd63,#7863ff]
+    },
+
+    // Configuration options go here
+    options: {
+   // rotation: -Math.PI,
+  //circumference: Math.PI,
+  legend: {
+    display: false
+  },
+  animation: {
+    animateRotate: true,
+    animateScale: false
+  },
+  // tooltips: {
+  //   enabled: false
+  // }
+    }
+});
+</script></div>
+    </div>
+</section>
+<section id="desc" class="container-fluid bg-dark text-white pt-10 pb-10 pr-7 pl-7">
+    <h1 class="text-center mb-3">Описание проекта</h1>
+    <p style="font-size:1.2em">Ученики VR квантума и ученик IT квантума детского технопарка «Кванториум» представляют вам универсальное информационное приложение для смартфона. Здесь вы найдете интерактивный прогноз погоды и свежие новости города. Кроме того – скоро появятся автобусные маршруты, афиши театра и кино, 3D-карта достопримечательностей города и многое другое!</p>
+</section>
+<section id="download" class="container-fluid pt-10 pb-10 pr-7 pl-7">
+    <h1 class="text-center mb-3">Скачать</h1>
+    <div class="align-items-center justify-content-center d-flex row">
+        <a href="#!" class="col-md-2 download mx-3 my-3 text-center" style="text-decoration: none !important"><i class="fab fa-google-play fa-10x"></i><br><p class="pt-4" style="font-size:1.5em;">Скачать с<br>Google Play</p></a>
+        <a href="#!" class="col-md-2 download mx-3 my-3 text-center" style="text-decoration: none !important"><i class="fab fa-android fa-10x"></i><br><p class="pt-4" style="font-size:1.5em;">Скачать здесь</p></a>
+    </div>
+</section>
+<section id="donate" class="container-fluid bg-dark text-white pt-10 pb-10 pr-7 pl-7 md-5">
+    <h1 class="text-center mb-5">Вы помжете помочь проекту своим пожертвованием на его развитие</h1>
+    <div class="align-items-center justify-content-center d-flex">
+        <form method="POST" class="form text-black" action="https://money.yandex.ru/quickpay/confirm.xml">
+            <input type="hidden" name="receiver" value="410017502127372">
+            <input type="hidden" name="formcomment" value="Проект «Железный человек»: реактор холодного ядерного синтеза">
+            <input type="hidden" name="short-dest" value="Проект «Железный человек»: реактор холодного ядерного синтеза">
+            <input type="hidden" name="label" value="$order_id">
+            <input type="hidden" name="quickpay-form" value="donate">
+            <input type="hidden" name="targets" value="Пожертвование на развитие проекта">
+            <div class="form-group">
+                <label for="sumofpay">Сумма</label>
+                <input type="number" autocomplete="off" id="sumofpay" class="form-control pay" name="sum" placeholder="Минимальная сумма - 2 рубля" min="2" data-type="number" required>
+            </div>
+            <div class="form-group">
+                <label for="comm">Комментарий</label>
+                <input autocomplete="off" id="comm" class="form-control pay" name="comment" value="" placeholder="На печеньки разрабам :D">
+            </div>
+            
+            <input type="hidden" name="need-fio" value="false">
+            <input type="hidden" name="need-email" value="false">
+            <input type="hidden" name="need-phone" value="false">
+            <input type="hidden" name="need-address" value="false">
+            <div class="form-check form-check-inline">
+                <label class="form-check-label my-1"><input type="radio" class="form-check-input" name="paymentType" value="PC" required>Яндекс.Деньгами</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label my-1"><input type="radio" class="form-check-input" name="paymentType" value="AC" required>Банковской картой</label>
+            </div>
+            <input type="submit" class="btn btn-warning my-1" value="Перевести"></form>
+    </div>
+</section>
+<section class="container-fluid pr-7 pl-7">
+</section>
+<!--<section id="help" class="container-fluid pt-10 pb-10 pr-7 pl-7">
+     <?php if ($_GET['sended']=='true'): ?>
+    <div class="alert alert-success alert-dismissible fade show mx-5" role="alert">
+    Ваше сообщение отправлено
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <?php endif; ?>
+    --<h1 class="text-center mb-5">Обратная связь</h1>
+    <div class="align-items-center justify-content-center d-flex">
+        <form method="POST" action="message.php">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" name='email' id="email" type="email" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+              <label for="theme">Что вас так беспокоит?</label>
+              <select id="theme" name="theme" class="form-control" required>
+                <option value="" selected><Выберите тему письма></option>
+                <option>Баг/ошибка в разделе "Погода"</option>
+                <option>Баг/ошибка в разделе "Новости"</option>
+                <option>Баг/ошибка в разделе "Достопримечательности"</option>
+                <option>Баг/ошибка в разделе "Маршруты"</option>
+                <option>Баг/ошибка в разделе "Афиши"</option>
+                <option>Предложение по улучшению</option>
+                <option>Сотрудничество с вами</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="bug">Опишите проблему</label>
+                <textarea class="form-control" name='bug' id="bug" cols="50" rows="7" max-cols="40" autocomplete="off" required></textarea>
+            </div>
+            <div id="captcha"></div>
+            <input type="submit" id="bugform" class="mt-3 btn btn-primary">
+        </form>
+    </div>
+</section> -->
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+
+
+
+
+<footer class="page-footer font-small bg-dark text-white">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-2">Контакты:</h5>
+          <hr class="mt-0 d-inline-block mx-auto" style="width: 5rem; background-color: white;">
+          <ul class="list-unstyled">
+            <li>
+              <i class="far fa-envelope fa-lg mr-2"></i><a class="footer-a" href="mailto:help@chevr.tk">help@chevr.tk</a>
+            </li>
+            <!--li>
+              <i class="fab fa-vk fa-lg mr-2"></i><a class="footer-a" href="#!">Группа ЧеVR</a>
+            </li-->
+            <li>
+              <i class="fab fa-vk fa-lg mr-2"></i><a class="footer-a" href="https://vk.com/kvantorium35">Группа Кванториума</a>
+            </li>
+            <li>
+              <!-- <i class="fas fa-mobile-alt fa-lg mr-2"></i><a class="footer-a" href="m/">Мобильная версия</a> -->
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+
+          <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-2">Нас поддерживают:</h5>
+            <hr class="mt-0 d-inline-block mx-auto" style="width: 5rem; background-color: white;">
+            <div class="row">
+                <div class="col-md-5 mx-auto mb-2">
+                    <a href="https://vk.com/kvantorium35"><img class="footer-img" src="img/kvant.png" height="90rem" draggable="false"></a>
+                </div>
+                <!--div class="col-md-5 mx-auto mb-2">
+                    <img id="s" src="img/s.png" height="90rem" draggable="false">
+                </div-->
+            </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-2">© 2019 SuhEugene</div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+
+
+
+</body>
+</html>
